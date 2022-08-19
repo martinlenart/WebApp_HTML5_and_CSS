@@ -1,30 +1,31 @@
 .GridPage {
   display: grid;
   grid-gap: 10px;
-  background-color:indigo;
+  background-color: indigo;
   height: 100vh;
 
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 50px repeat(3, 1fr) 30px;
+  grid-template-rows: 50px 1fr 30px;
 
   grid-template-areas:
-  'header header header header header header header header'
-  'main main main main main main main main'
-  'side1 side1 side1 side1 side1 side1 side1 side1'
-  'side2 side2 side2 side2 side2 side2 side2 side2'
-  'footer footer footer footer footer footer footer footer';
-}  
+    'header header header header header header header header'
+    'side1 main main main main main side2 side2'
+    'side1 footer footer footer footer footer footer footer';
+}
 
-@media (min-width: 600px) {
+
+@media (max-width: 600px) {
   .GridPage {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 50px 1fr 30px;
-  
+    grid-template-rows: 50px repeat(3, 1fr) 30px;
+
     grid-template-areas:
       'header header header header header header header header'
-      'side1 main main main main main side2 side2'
-      'side1 footer footer footer footer footer footer footer';
-    }
+      'main main main main main main main main'
+      'side1 side1 side1 side1 side1 side1 side1 side1'
+      'side2 side2 side2 side2 side2 side2 side2 side2'
+      'footer footer footer footer footer footer footer footer';
+  }
 }
 
 [class^='GridItem'] {
@@ -33,7 +34,7 @@
   justify-content: center;
   outline: 3px dashed #f90;
   font-size: 30px;
-  color:wheat;
+  color: wheat;
 }
 
 .GridItemHeader {
@@ -43,7 +44,7 @@
 
 .GridItemSideOne {
   grid-area: side1;
-  background-color:green
+  background-color: green
 }
 
 .GridItemSideTwo {
