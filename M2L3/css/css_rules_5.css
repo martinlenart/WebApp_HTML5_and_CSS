@@ -13,9 +13,24 @@ span:empty {
 	border-radius: 50%;
 }
 
+/* every span element that is a direct adjacent sibling to an empty span
+span:empty+span {
+	background-color:brown;
+	border-radius: 50%;
+}
+*/
+
+/* every span element that is an adjacent sibling to an empty span
+span:empty~span {
+	background-color:coral;
+	border-radius: 50%;
+}
+*/
+
 /* every child that is not every 3rd
 span:not(span:nth-child(3n-2)) {
 	background-color: #f90;
 	border-radius: 50%;
 }
 */
+
