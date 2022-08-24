@@ -7,19 +7,31 @@ span {
 	background-color: blue;
 }
 
-/* try nth-child(odd) (even) (-n+4): the first 3  3n-2: every 3rd  */
+/* first and last child */
+span:last-of-type {
+	background-color: #f90;
+	border-radius: 50%;
+}
+
+/* nth-child(..)
+(odd) (even) 
+(-n+4): the first 3  
+3n-2: every 3rd  */
+
+/*span:nth-child(3n-2)
 span:nth-child(3n-2) {
 	background-color: #f90;
 	border-radius: 50%;
 }
+*/
 
-
-/* the last 3 children 
-span:nth-last-child(-n+3) {
+/* the last 3 children
+span:nth-last-child(-n+4) {
 	background-color: #f90;
 	border-radius: 50%;
 }
 */
+
 
 /* from the 5th through 8th element
 span:nth-child(n+6):nth-child(-n+9) {
@@ -27,5 +39,6 @@ span:nth-child(n+6):nth-child(-n+9) {
 	border-radius: 50%;
 }
 */
+
 
 

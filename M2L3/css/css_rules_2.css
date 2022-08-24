@@ -73,7 +73,7 @@ p:hover {
 /* this rule will apply for all img tags wich are children of a tag with class="Item" and has the alt="Guardians of the Galaxy" or
    all img tags wich are children of a tag with class="Item" and has the alt="The Lego Movie" */
 .Item img[alt="Guardians of the Galaxy"],
-.Item img[alt="The Lego Movie"] {
+.Item img[alt="The Lego Movie"]{
 	max-height: 10rem;
 }
 

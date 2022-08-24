@@ -77,10 +77,10 @@ p:hover {
 .Item img[data-size-display="small"] {
 	max-height: 5rem;
 }
-.Item img[data-size-display="large"][alt="Maleficent"] {
-	max-height: 15rem;
-}
 
+img[data-size-display="large"][alt="Maleficent"] {
+	max-height: 20rem;
+}
 /* this rule will apply for all tags with class="Caption" which are children of a 
    tag with class="Item" */
 .Item .Caption {
